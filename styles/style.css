@@ -1,10 +1,13 @@
 .main-container {
+    display: grid;
+    grid-template-rows: 150px 3500px;
     justify-items: center;
     background-color: fuchsia;
     font-family: Helvetica;
 }
 
 #fixed-heading {
+    grid-row-start: 1;
     top: 0px;
     left: 10px;
     height: 150px;
@@ -16,15 +19,16 @@
 }
 
 .content-container {
-    display: flex;
-    top: 500px;
+    grid-row-start: 2;
+    /*display: flex;*/
+    top: 500px;*/
     left: 10px;
-    height: 5000px;
+    height: 3500px;
     flex-direction: column;
     background-color: yellow;
     border: 2px black solid;
     width: 90%;
-    margin: 50px
+    margin: 10px
 }
 
 .content-item {
@@ -37,11 +41,15 @@ nav>a {
     background-color: rgb(28, 178, 181);
     border: 2px solid black;
     margin: 5px;
-    padding: 5px
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black
 }
 
 p {
-    margin-bottom: 500px
+    margin-bottom: 200px
 }
 
 h2 {
@@ -49,12 +57,10 @@ h2 {
     background-color: fuchsia;
     width: 200px;
     padding: 10px;
-    border: black 2px solid
+    border: black 2px solid;
+    font-size: 14px
 }
 
 hr {
     width: 90%
 }
-
-
-
