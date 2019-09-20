@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-columns: 1fr;
+    justify-items: center
+}
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 2
+}
+
+nav {
+    grid-row-start: 2;
+    grid-row-end: 3 
+}
+
+nav>span {
+    background-color: lightblue;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px
+}
+
+main {
+    background-color: yellow; 
+    font-family: Helvetica;
+    grid-row-start: 3;
+    grid-row-end: 4
+}
