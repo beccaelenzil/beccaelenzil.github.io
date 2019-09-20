@@ -1,18 +1,27 @@
 .main-container {
-    display: grid;
-    grid-template-rows: 100px 100px 5000px;
-    grid-template-columns: 1fr;
     justify-items: center;
     background-color: fuchsia;
     font-family: Helvetica;
 }
 
+#fixed-heading {
+    top: 0px;
+    left: 10px;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    align-self: center;
+    background-color: fuchsia
+}
+
 .content-container {
-    grid-row-start: 3;
     display: flex;
+    top: 500px;
+    left: 10px;
+    height: 5000px;
     flex-direction: column;
     background-color: yellow;
-    grid-row-start: 3;
     border: 2px black solid;
     width: 90%;
     margin: 50px
@@ -22,16 +31,6 @@
     background-color: rgb(28, 178, 181);
     border: 2px black dashed;
     margin: 50px
-}
-
-header {
-    grid-row-start: 1;
-    /*position: fixed*/
-}
-
-nav {
-    grid-row-start: 2;
-    /*position: fixed*/
 }
 
 nav>a {
@@ -46,7 +45,11 @@ p {
 }
 
 h2 {
-    margin-left: 50px
+    margin-left: 50px;
+    background-color: fuchsia;
+    width: 200px;
+    padding: 10px;
+    border: black 2px solid
 }
 
 hr {
