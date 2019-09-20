@@ -14,14 +14,14 @@
     width: 100%;
     position: fixed;
     z-index: 10;
-    align-self: center;
+    align-items: center;
     background-color: fuchsia
 }
 
 .content-container {
     grid-row-start: 2;
     /*display: flex;*/
-    top: 500px;*/
+    top: 500px;
     left: 10px;
     height: 3500px;
     flex-direction: column;
@@ -45,11 +45,16 @@ nav>a {
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    color: black
+    color: black;
+    align-self: center
 }
 
 p {
     margin-bottom: 200px
+}
+
+h1 {
+
 }
 
 h2 {
