@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Lonely Bootstrap Template</title>
+  <title>Seattle Late School Buses</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,7 +41,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">Lonely</a></h1>
+        <h1><a href="index.html">Becca Elenzil</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -67,11 +67,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
+          <h2><a href="https://beccaelenzil.github.io/buses-react/" target="_blank">Seattle Late School Buses</a></h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li>Portfolio Details</li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li>Bus App Details</li>
           </ol>
         </div>
 
@@ -89,16 +89,13 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                  <img src="assets/img/portfolio/bus-detail2.jpg" alt="today's morning late buses">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                  <img src="assets/img/portfolio/bus-detail1.jpg" alt="historic morning late buses">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                </div>
 
               </div>
               <div class="swiper-pagination"></div>
@@ -109,16 +106,24 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Project date</strong>: 2022</li>
+                <li><strong>Technologies</strong>: Python, Flask, BeautifulSoup, PostgreSQL, Javascript, React, MapBoxGL</li>
+                <li><a href="https://beccaelenzil.github.io/buses-react/" target="_blank">Web App / Visualization</a></li>
+                <li><a href="https://seattle-school-buses.herokuapp.com/buses" target="_blank">Public API</a></li>
+                <li><a href="https://github.com/beccaelenzil/seattle-late-schools-buses" target="_blank">Backend Repo</a></li>
+                <li><a href="https://github.com/beccaelenzil/buses-react/" target="_blank">Frontend Repo</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Seattle Late School Buses</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                This web app documents and reports late Seattle Public School buses. I was inspired to work on this project by the understanding that student achievement is negatively affected by tardiness. I started this project in Jupyter notebooks while teaching high school data science.
+                </p>
+                <p>
+                The software builds a database of daily late buses with key information such as school, route, minutes late, and date. This information is available publicly on a per-day basis, but no historical database or public APIs exist. The project uses a Flask app to scrape the Seattle Schools webpage, parse it using regex, and post the data to PostgreSQL. The post request is triggered from a cron job on BEEW.io and the back-end service is deployed to Heroku. The front-end web application is React with MapBoxGL and is deployed to GitHub pages.
+              </p>
+              <p>
+                To establish a proof-of-concept I created a notebook in Deepnote. The Deepnote platform provides a scheduler for running the notebook and a dashboard for publishing the data and maps. The dashboard can be viewed <a href="https://bit.ly/3e6YlIW">here.</a>
               </p>
             </div>
           </div>
